@@ -1,0 +1,10 @@
+---
+- name: Installing my common apt packages
+  become: yes
+  become_method: sudo
+  apt:
+    pkg:
+      build-essential 
+      curl 
+      file 
+      git
